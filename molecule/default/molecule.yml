@@ -15,9 +15,9 @@ platforms:
     # privileged: true
 provisioner:
   name: ansible
-  log: true
+  log: false
   options:
-    vvv: true
+    vvv: false
   config_options:
     defaults:
       # strategy_plugins: ../../plugins/mitogen/ansible_mitogen/plugins/strategy
@@ -57,7 +57,7 @@ verifier:
     # cache-clear: true
     vvv: false
     verbose: false
-    verbosity: 7
+    # verbosity: 7
     sudo: true
   lint:
     name: flake8
