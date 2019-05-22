@@ -2,6 +2,11 @@
 language: python
 services: docker
 
+branches:
+  only:
+    - master
+    - devel
+
 env:
   global:
     - ROLE_NAME: sonobouy
@@ -15,12 +20,14 @@ install:
 
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
-  - pwd
-  - cd ansible-$ROLE_NAME-ubuntu
 
 script:
   # Run tests.
   - molecule test
 
+after_sucess:
+  - codedov
+
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  email: false
