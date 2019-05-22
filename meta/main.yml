@@ -1,6 +1,11 @@
+---
+dependencies: []
+
 galaxy_info:
+  role_name: Sonobuoy
   author: Luis Cacho
   description: Ansible role for install Heptio Sonobuoy (targeting Ubuntu 16.04/18.04)
+  company: "Rackspace"
   license: GPLv3
   min_ansible_version: 2.7
   platforms:
