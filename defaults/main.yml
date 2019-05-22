@@ -1,2 +1,15 @@
 ---
 # defaults file for ansible-sonobuoy-ubuntu
+
+sonobuoy_version: 0.14.2
+sonobuoy_platform: amd64
+
+sonobuoy_download_url: https://github.com/heptio/sonobuoy/releases/download
+
+sonobuoy_download_dir: /opt/sonobouy
+sonobuoy_install_dir: /usr/local/bin
+
+sonobuoy_checksums:
+  0.14.2:
+    linux:
+      amd64: sha256:30ed9604750b61ea99ea11238172701c61e3149758e46c1c5d7f5e13ad779764
