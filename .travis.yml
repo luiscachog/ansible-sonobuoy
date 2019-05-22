@@ -1,35 +1,3 @@
-<<<<<<< HEAD
----
-language: python
-services: docker
-
-branches:
-  only:
-    - master
-    - devel
-
-env:
-  global:
-    - ROLE_NAME: sonobouy
-  matrix:
-    - MOLECULE_DISTRO: ubuntu1804
-    - MOLECULE_DISTRO: ubuntu1604
-
-install:
-  # Install test dependencies.
-  - pip install molecule docker
-
-script:
-  # Run tests.
-  - molecule test
-
-after_sucess:
-  - codedov
-
-notifications:
-  webhooks: https://galaxy.ansible.com/api/v1/notifications/
-  email: false
-=======
 ---
 language: python
 services: docker
@@ -60,4 +28,3 @@ after_sucess:
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
   email: false
->>>>>>> devel
