@@ -10,7 +10,9 @@ galaxy_info:
     - bionic
   galaxy_tags:
     - kubernetes
+    - k8s
     - security
     - linux
     - conformance
     - test
+    - cloud

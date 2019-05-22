@@ -1,2 +1,10 @@
 ---
 # vars file for ansible-sonobuoy-ubuntu
+
+sonobuoy_os: '{{ ansible_system|lower }}'
+
+sonobuoy_bin: sonobuoy{{ sonobuoy_suffix|default("") }}
+sonobuoy_url: '{{ sonobuoy_download_url }}/v{{ sonobuoy_version }}/sonobuoy_{{ sonobuoy_version }}_{{ sonobuoy_os}}_{{ sonobuoy_platform }}.tar.gz'
+sonobuoy_download_path: '{{ sonobuoy_download_dir }}/sonobuoy-{{ sonobuoy_version }}'
+sonobuoy_install_path: '{{ sonobuoy_install_dir }}/sonobuoy-{{ sonobuoy_version }}'
+sonobuoy_checksum: '{{ sonobuoy_checksums[sonobuoy_version][sonobuoy_os][sonobuoy_platform] }}'

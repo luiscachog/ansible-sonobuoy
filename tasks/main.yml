@@ -1,2 +1,36 @@
 ---
 # tasks file for ansible-sonobuoy-ubuntu
+
+- name: create download directory
+  become: true
+  become_user: root
+  file:
+    path: '{{ sonobuoy_download_path }}'
+    state: directory
+    mode: '0755'
+    recurse: true
+
+- name: download sonobuoy
+  become: true
+  become_user: root
+  get_url:
+    url: '{{ sonobuoy_url }}'
+    dest: '{{ sonobuoy_download_path }}'
+    checksum: '{{ sonobuoy_checksum }}'
+    mode: '0755'
+  
+- name: extract sonobuoy
+  become: true
+  become_user: root
+  unarchive:
+    src: "{{ sonobuoy_download_path }}/{{ sonobuoy_bin }}_{{ sonobuoy_version }}_{{ sonobuoy_os}}_{{ sonobuoy_platform }}.tar.gz"
+    dest: "{{ sonobuoy_download_path }}"
+    remote_src: yes
+
+- name: link sonobuoy
+  become: true
+  become_user: root
+  file:
+    src: '{{ sonobuoy_download_dir }}/{{ sonobuoy_bin }}-{{ sonobuoy_version }}/{{ sonobuoy_bin }}'
+    dest: '{{ sonobuoy_install_dir }}/{{ sonobuoy_bin }}'
+    state: link
