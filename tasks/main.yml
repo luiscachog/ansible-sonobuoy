@@ -1,7 +1,12 @@
 ---
 # tasks file for ansible-sonobuoy-ubuntu
 
-- name: create download directory
+- name: Verify if directory already exists
+  stat:
+    path: '{{ sonobuoy_download_path }}'
+  register: dirs_stat
+
+- name: Create download directory
   become: true
   become_user: root
   file:
@@ -9,6 +14,8 @@
     state: directory
     mode: '0755'
     recurse: true
+  when:
+    - not dirs_stat.stat.exists
 
 - name: download sonobuoy
   become: true
