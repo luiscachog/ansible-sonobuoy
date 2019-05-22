@@ -18,14 +18,14 @@
     dest: '{{ sonobuoy_download_path }}'
     checksum: '{{ sonobuoy_checksum }}'
     mode: '0755'
-  
+
 - name: extract sonobuoy
   become: true
   become_user: root
   unarchive:
     src: "{{ sonobuoy_download_path }}/{{ sonobuoy_bin }}_{{ sonobuoy_version }}_{{ sonobuoy_os}}_{{ sonobuoy_platform }}.tar.gz"
     dest: "{{ sonobuoy_download_path }}"
-    remote_src: yes
+    remote_src: true
 
 - name: link sonobuoy
   become: true
