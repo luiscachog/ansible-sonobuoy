@@ -23,7 +23,7 @@ script:
   - molecule test
 
 after_sucess:
-  - codedov
+  - codecov
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
