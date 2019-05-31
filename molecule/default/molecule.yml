@@ -15,9 +15,9 @@ platforms:
     # privileged: true
 provisioner:
   name: ansible
-  log: false
+  log: true
   options:
-    vvv: false
+    vvv: true
   config_options:
     defaults:
       # strategy_plugins: ../../plugins/mitogen/ansible_mitogen/plugins/strategy
