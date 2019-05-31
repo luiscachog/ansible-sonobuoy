@@ -17,4 +17,3 @@ def test_sonobuoy_binary(host):
     binary = host.find_command('sonobuoy')
 
     assert binary
-
