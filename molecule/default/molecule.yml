@@ -8,9 +8,9 @@ lint:
   # options:
   # config-file: ../../.yamllint
 platforms:
-  - name: ubuntu-1804-ci
-    hostname: ubuntu-1804-ci
-    image: ubuntu:18.04
+  - name: ubuntu-ci
+    hostname: ubuntu-ci
+    image: ${MOLECULE_DISTRO}
     # command: "/usb/sbin/init"
     # privileged: true
 provisioner:
@@ -59,5 +59,10 @@ verifier:
     verbose: false
     # verbosity: 7
     sudo: true
+    r: "p"
+    color: "yes"
+    cov_report: term
+    cov: "."
+
   lint:
     name: flake8
