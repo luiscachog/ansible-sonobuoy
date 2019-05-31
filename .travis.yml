@@ -1,6 +1,7 @@
 ---
 language: python
-services: docker
+services: 
+  - docker
 
 branches:
   only:
@@ -11,8 +12,8 @@ env:
   global:
     - ROLE_NAME: sonobouy
   matrix:
-    - MOLECULE_DISTRO: ubuntu1804
-    - MOLECULE_DISTRO: ubuntu1604
+    - MOLECULE_DISTRO: ubuntu:1804
+    - MOLECULE_DISTRO: ubuntu:1604
 
 install:
   # Install test dependencies.
