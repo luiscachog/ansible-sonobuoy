@@ -1,5 +1,5 @@
 molecule==2.20.1
-ansible==2.7.0
+ansible==2.7.8
 testinfra==1.19.0
 pytest-cov==2.7.1
 pytest==4.5.0
