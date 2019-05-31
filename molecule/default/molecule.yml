@@ -61,8 +61,8 @@ verifier:
     sudo: true
     r: "p"
     color: "yes"
-    cov_report: term
-    cov: "."
+    # cov_report: term
+    # cov: "."
 
   lint:
     name: flake8
