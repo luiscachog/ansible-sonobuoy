@@ -19,7 +19,7 @@ env:
 install:
   # Install test dependencies.
   - pip install molecule==2.20.1 ansible==2.7.0 testinfra==1.19.0 docker codecov pytest-cov
-
+  - pytest --trace-config
 script:
   # Run tests.
   - molecule test
