@@ -62,7 +62,7 @@ verifier:
     r: "p"
     color: "yes"
     # cov_report: term
-    # cov: "."
+    cov: "."
 
   lint:
     name: flake8
