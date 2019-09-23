@@ -10,6 +10,9 @@ sonobuoy_download_dir: /opt/sonobouy
 sonobuoy_install_dir: /usr/local/bin
 
 sonobuoy_checksums:
+  0.15.3:
+    linux:
+      amd64: sha256:45748a1346952f6ed0b938bc3a1901b13aefdee8327298d2dcc047531e532d8e
   0.15.4:
     linux:
       amd64: sha256:8a31027e13dc69adb47a7c699b6643058a31c899e5bcf25a60eb6cf28b37feda
