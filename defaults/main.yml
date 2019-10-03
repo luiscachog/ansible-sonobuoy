@@ -12,7 +12,7 @@ sonobuoy_install_dir: /usr/local/bin
 sonobuoy_checksums:
   0.16.1:
     linux:
-      amd64: e6f74db5bcfdcd0ab13c6c709bfbfa74f520ac501875cefe7350a0164663ccc5
+      amd64: sha256:e6f74db5bcfdcd0ab13c6c709bfbfa74f520ac501875cefe7350a0164663ccc5
   0.16.0:
     linux:
       amd64: sha256:f49595f7c6388352ddd89cb6dd41584c1bd5ceddb06fbaee4e3f73a83e0d888d
