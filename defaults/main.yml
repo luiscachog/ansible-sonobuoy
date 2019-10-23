@@ -4,9 +4,9 @@
 sonobuoy_version: 0.16.2
 sonobuoy_platform: amd64
 
-sonobuoy_download_url: https://github.com/heptio/sonobuoy/releases/download
+sonobuoy_download_url: https://github.com/vmware-tanzu/sonobuoy/releases/download
 
-sonobuoy_download_dir: /opt/sonobouy
+sonobuoy_download_dir: /opt/sonobuoy
 sonobuoy_install_dir: /usr/local/bin
 
 sonobuoy_checksums:
