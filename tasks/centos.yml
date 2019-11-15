@@ -1,0 +1,9 @@
+---
+
+- name: Adding /usr/local/bin to the PATH
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: "^Defaults(.*)secure_path"
+    line: "Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin"
+    validate: '/usr/sbin/visudo -cf %s'
