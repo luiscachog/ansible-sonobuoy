@@ -1,0 +1,10 @@
+{
+  "src": {
+    "tagName": "v%s",
+    "commitArgs": "-S",
+    "tagArgs": "-S"
+  },
+  "github": {
+    "release": true
+  }
+}
