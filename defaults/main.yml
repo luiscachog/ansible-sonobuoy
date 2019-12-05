@@ -1,7 +1,7 @@
 ---
 # defaults file for ansible-sonobuoy-ubuntu
 
-sonobuoy_version: 0.16.3
+sonobuoy_version: 0.16.4
 sonobuoy_platform: amd64
 
 sonobuoy_download_url: https://github.com/vmware-tanzu/sonobuoy/releases/download
@@ -10,6 +10,9 @@ sonobuoy_download_dir: /opt/sonobuoy
 sonobuoy_install_dir: /usr/local/bin
 
 sonobuoy_checksums:
+  0.16.4:
+    linux:
+      amd64: sha256:9d305a2c0eafbd549dd8467d02f654e696c2023b40cc595a86868290b90c93d2
   0.16.3:
     linux:
       amd64: sha256:7639b457a5992ff14c25a0e9893a64b1a85386fd88a1934024fbc4c112d0aa07
