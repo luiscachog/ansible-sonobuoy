@@ -2,9 +2,6 @@ name: Molecule Test
 
 on: [push]
 
-matrix:
-    MOLECULE_DISTRO: [ubuntu:20.04, ubuntu:19.10]
-
 jobs:
   test:
     runs-on: ubuntu-latest
