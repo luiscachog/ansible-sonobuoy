@@ -8,9 +8,12 @@ jobs:
 
     strategy:
       matrix:
-          MOLECULE_DISTRO:
+          distro:
           - "ubuntu:20.04"
           - "ubuntu:19.10"
+
+    env:
+      MOLECULE_DISTRO: ${{ matrix.distro }}  
 
     steps:
     - uses: actions/checkout@v1
