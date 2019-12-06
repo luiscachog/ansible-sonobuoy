@@ -4,15 +4,21 @@ dependencies: []
 galaxy_info:
   role_name: sonobuoy
   author: Luis Cacho
-  description: Ansible role for install Heptio Sonobuoy (targeting Ubuntu 16.04/18.04)
+  description: Ansible role for install VMware-Tanzu Sonobuoy
   company: "Rackspace"
   license: GPLv3
   min_ansible_version: 2.7
   platforms:
     - name: Ubuntu
       versions:
-        - xenial
-        - bionic
+        - 16.04
+        - 18.04
+        - 19.10
+        - 20.04
+    - name: CentOS
+      versions:
+        - 6
+        - 7
   galaxy_tags:
     - kubernetes
     - k8s
