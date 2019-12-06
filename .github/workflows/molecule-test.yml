@@ -11,6 +11,10 @@ jobs:
           distro:
           - "ubuntu:20.04"
           - "ubuntu:19.10"
+          - "ubuntu:18.04"
+          - "ubuntu:16.04"
+          - "centos:7"
+          - "centos:6"
 
     env:
       MOLECULE_DISTRO: ${{ matrix.distro }}  
@@ -29,4 +33,3 @@ jobs:
     - name: Run Molecule test
       run: |
         molecule test
-
