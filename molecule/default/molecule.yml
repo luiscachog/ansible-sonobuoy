@@ -5,7 +5,9 @@ driver:
   name: docker
 lint:
   name: yamllint
-  # options:
+  options:
+    config-data:
+      ignore: .github/
   # config-file: ../../.yamllint
 platforms:
   - name: ubuntu-ci
