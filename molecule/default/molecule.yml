@@ -10,8 +10,8 @@ lint:
       ignore: .github/
   # config-file: ../../.yamllint
 platforms:
-  - name: ubuntu-ci
-    hostname: ubuntu-ci
+  - name: instance-ci
+    hostname: instance-ci
     image: ${MOLECULE_DISTRO}
     # command: "/usb/sbin/init"
     # privileged: true

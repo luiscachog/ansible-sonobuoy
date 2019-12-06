@@ -2,4 +2,4 @@
 - name: Converge
   hosts: all
   roles:
-    - role: ansible-sonobuoy-ubuntu
+    - role: ansible-sonobuoy
