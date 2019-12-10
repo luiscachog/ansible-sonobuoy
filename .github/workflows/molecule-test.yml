@@ -1,6 +1,15 @@
 name: Molecule Test
 
-on: [push]
+on:
+  pull_request:
+    branches:
+    - master
+    - devel
+
+  push:
+    branches:
+    - master
+    - devel
 
 jobs:
   test:
