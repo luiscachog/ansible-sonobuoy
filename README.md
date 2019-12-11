@@ -1,6 +1,6 @@
 # Ansible Role: Sonobuoy
 
-[![Build Status](https://https://travis-ci.com/k4ch0/ansible-sonobuoy.svg?branch=master)](https://travis-ci.com/k4ch0/ansible-sonobuoy)
+[![Build Status](https://travis-ci.com/k4ch0/ansible-sonobuoy.svg?branch=master)](https://travis-ci.com/k4ch0/ansible-sonobuoy)
 [![Actions Status](https://github.com/k4ch0/ansible-sonobuoy/workflows/Molecule%20Test/badge.svg)](https://github.com/k4ch0/ansible-sonobuoy/actions)
 [![codecov](https://codecov.io/gh/k4ch0/ansible-sonobuoy/branch/master/graph/badge.svg)](https://codecov.io/gh/k4ch0/ansible-sonobuoy)
 
