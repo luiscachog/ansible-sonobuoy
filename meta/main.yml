@@ -26,5 +26,7 @@ galaxy_info:
     - linux
     - conformance
     - test
-    - cloud native
+    - cloudnative
+    - cloud
+    - native
     - cncf
