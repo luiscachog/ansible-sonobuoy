@@ -1,8 +1,11 @@
 # Ansible Role: Sonobuoy
 
+![Ansible Role](https://img.shields.io/ansible/role/45240)
 [![Build Status](https://travis-ci.com/k4ch0/ansible-sonobuoy.svg?branch=master)](https://travis-ci.com/k4ch0/ansible-sonobuoy)
 [![Actions Status](https://github.com/k4ch0/ansible-sonobuoy/workflows/Molecule%20Test/badge.svg)](https://github.com/k4ch0/ansible-sonobuoy/actions)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/45240)
 [![codecov](https://codecov.io/gh/k4ch0/ansible-sonobuoy/branch/master/graph/badge.svg)](https://codecov.io/gh/k4ch0/ansible-sonobuoy)
+
 
 Ansible role that installs [VMware-Tanzy Sonobuoy](https://github.com/vmware-tanzu/sonobuoy), a diagnostic tool that makes it easier to understand the state of a Kubernetes cluster. 
 
@@ -41,6 +44,7 @@ None.
 ## License
 
 MIT
+![GitHub](https://img.shields.io/github/license/k4ch0/ansible-sonobuoy)
 
 ## Author Information
 
